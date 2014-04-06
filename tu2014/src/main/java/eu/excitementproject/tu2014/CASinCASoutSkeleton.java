@@ -1,4 +1,4 @@
-package eu.excitementproject.fallschool;
+package eu.excitementproject.tu2014;
 
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Level;
@@ -8,11 +8,9 @@ import org.apache.uima.jcas.JCas;
 import org.uimafit.util.JCasUtil;
 
 import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Lemma;
-
 import eu.excitement.type.alignment.AlignedText;
 import eu.excitementproject.eop.lap.LAPAccess;
 import eu.excitementproject.eop.lap.LAPException;
-import eu.excitementproject.eop.lap.dkpro.MaltParserDE;
 import eu.excitementproject.eop.lap.dkpro.MaltParserEN;
 
 /**

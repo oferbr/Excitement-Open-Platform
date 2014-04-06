@@ -1,4 +1,4 @@
-package eu.excitementproject.fallschool;
+package eu.excitementproject.tu2014;
 
 import static org.uimafit.factory.AnalysisEngineFactory.createPrimitiveDescription;
 
