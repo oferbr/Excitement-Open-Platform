@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entailment-corpus>
+	<pair id="211" entailment="NONENTAILMENT" task="IR" length="short" >
+		<t>Accompanied by Sioux prayers and the keening of Scottish bagpipes, a plain cotton shirt was returned to South Dakota this past summer.</t>
+		<h>A Sioux ghost shirt was returned by a Scottish museum.</h>
+	</pair>
+	<pair id="212" entailment="ENTAILMENT" task="IR" length="short" >
+		<t>Actor Christopher Reeve, best known for his role as Superman, is paralyzed and cannot breathe without the help of a respirator after breaking his neck in a riding accident in Culpeper, Va., on Saturday.</t>
+		<h>Christopher Reeve had an accident.</h>
+	</pair>
+	<pair id="213" entailment="NONENTAILMENT" task="IR" length="short" >
+		<t>After years of study, the Vatican's doctrinal congregation has sent church leaders a confidential document concluding that "sex-change" procedures do not change a person's gender in the eyes of the church.</t>
+		<h>Sex-change operations become more common.</h>
+	</pair>
+	<pair id="214" entailment="NONENTAILMENT" task="IR" length="short" >
+		<t>Although the number of the confirmed Ebola cases has risen slightly to 26 in Gabon and to 16 in Congo Brazzaville, new infections are now so low that it seems the epidemic is "burning out".</t>
+		<h>Ebola Epidemic breaks out in Zaire.</h>
+	</pair>
+	<pair id="215" entailment="ENTAILMENT" task="IR" length="short" >
+		<t>Anna Politkovskaya was found shot dead on Saturday in a lift at her block of flats in the Russian capital, Moscow.</t>
+		<h>Anna Politkovskaya was murdered.</h>
+	</pair>
+	<pair id="216" entailment="ENTAILMENT" task="IR" length="short" >
+		<t>Anti-nuclear protesters on Wednesday delayed the progress of a shipment of radioactive waste toward a dump in northern Germany. The train stopped for the fourth time since crossing into Germany as it neared the northern town of Lueneburg.</t>
+		<h>Nuclear waste transport delayed in Germany.</h>
+	</pair>
+	<pair id="217" entailment="NONENTAILMENT" task="IR" length="long" >
+		<t>Arlene Blum is a legendary trailblazer by any measure. Defying the climbing establishment of the 1970s, she led the first teams of women on successful ascents of Mt. McKinley and Annapurna, and was the first American woman to attempt Mt. Everest. In her long, adventurous career, she has played a leading role in more than twenty expeditions and forged a place for women in the perilous arena of high-altitude mountaineering.</t>
+		<h>A woman succeeds in climbing Everest solo.</h>
+	</pair>
+	<pair id="218" entailment="ENTAILMENT" task="IR" length="long" >
+		<t>Around 130 flights were cancelled during a strike held on 19 January, and others were cancelled in the days that followed. When the flight assistants announced a further 24-hour for 23 January, the Italian Guarantee Authority (Commissione di Garanzia) which regulates strikes in essential public services (under the terms of laws no. 194/1990 and no. 83/2000) (IT0004266F) accused the unions of breaching the legal provision that 10 days must elapse between one strike and the next.</t>
+		<h>Italian flight assistants go on strike.</h>
+	</pair>
+	<pair id="219" entailment="NONENTAILMENT" task="IR" length="short" >
+		<t>As parties adapt to these new conditions, new definitions - replete with new assumptions about their functions - are likely to shape the ongoing debate about their roles and functions in the 21st century.</t>
+		<h>Several new political parties emerged.</h>
+	</pair>
+	<pair id="220" entailment="NONENTAILMENT" task="IR" length="short" >
+		<t>As the terms denoting this allowance vary, it may sometimes remain unclear whether fathers have any entitlements at all, and if so, to what exactly they are entitled.</t>
+		<h>Maternity leave varies in Europe.</h>
+	</pair>
+</entailment-corpus>

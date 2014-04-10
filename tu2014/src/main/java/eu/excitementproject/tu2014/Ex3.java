@@ -38,7 +38,7 @@ public class Ex3 {
 	public static void ex3_1()
 	{
 		// Let's initialize WordNet, and VerbOcean,  
-		// and they query something. 
+		// and then query something. 
 		
 		
 		// First, initialization. 
@@ -82,7 +82,7 @@ public class Ex3 {
 			// This query asks for terms that entails "dog (N)". 
 			List<LexicalRule> list2 = lexRes1.getRulesForRight("dog", new ByCanonicalPartOfSpeech("N")); 
 
-			System.out.println("\nthe terms that entails dog: "); 
+			System.out.println("\nthe terms that entail dog: "); 
 			for(LexicalRule r : list2)
 			{
 				System.out.println("\t" + r.getLLemma()) ; // NOTE: Here we print *L* Lemma! (LHS side of rule). We already know what is RHS. 
@@ -123,7 +123,7 @@ public class Ex3 {
 		// TODO task 3_1b 
 		// - ask VerbOcean (in the above code, LexicalResource lexRes2) to get any lexical rule that 
 		// covers "dog (as verb) -> X". Does it has any? 
-		// - ask VerbOcean and WordNet to provides rules for (hunt/V -> )
+		// - ask VerbOcean and WordNet to provide rules for (hunt/V -> )
 		//   compare them. 
 		// Note that you can specify verb by (new ByCanonicalPartOfSpeech("V")) 		
 	}

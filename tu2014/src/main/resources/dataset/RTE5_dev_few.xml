@@ -1,0 +1,42 @@
+<devset>
+	<pair id="441" entailment="ENTAILMENT" task="IR">
+		<t>In an interview on a television show called the No Drug Show, hosted by Larry Byrnes, the Church of Scientology blamed both the September 11, 2001 attacks in the United States and the attack on Pearl Harbor on psychiatrists and the drugs they prescribe their patients. Scientology considers psychiatry to be barbaric and a violation of human rights. The video was posted on the video sharing website YouTube, but was later removed &quot;due to a copyright claim by Axiom 10 Productions, Inc.&quot; Mark Bunker of XenuTV questioned why Axiom 10 would utilize the Digital Millenium Copyright Act to remove the video from YouTube, as it was promoting their ideology about psychiatrists. It was later re-added to another site called Vimeo.com.</t>
+		<h>Scientology is against psychiatry.</h>
+	</pair>
+	<pair id="442" entailment="ENTAILMENT" task="IR">
+		<t>On Wednesday night people in the Bah&#231;elievler district of Yenibosna in Istanbul, Turkey, claimed that they had seen a UFO flying in the sky, the Turkish newspaper Sabah reports. They said that the UFO was glowing with white lights and that it revolved around itself. Istanbul has had previous UFO incidents in the past, and in 2002, the Istanbul UFO Museum was opened to the public.</t>
+		<h>A UFO might have been seen in Turkey.</h>
+	</pair>
+	<pair id="443" entailment="NONENTAILMENT" task="IR">
+		<t>On Tuesday morning police in Bangladesh have blamed Islamic militants for what's believed to be the country's first suicide bombings. Up to ten people were killed and dozens of others injured in the two attacks. The attacks left at least 50 people wounded with many of them said to be in critical condition. The government has accused the hardline Jamayetul Mujahideen, which wants to introduce strict Islamic law in the Muslim-majority democracy, of staging the attacks targeting the legal system. Bangladesh police have arrested six men, including a suicide squad member in different parts of the country, in the last two days.</t>
+		<h>Two people were killed in Bangladesh.</h>
+	</pair>
+	<pair id="444" entailment="ENTAILMENT" task="IR">
+		<t>According to officials, Jo&#227;o Bernardo Vieira, the president of Guinea-Bissau, was shot to death on Monday in his palace by renegade soldiers. &quot;President Vieira was killed by the army as he tried to flee his house which was being attacked by a group of soldiers close to the chief of staff Tagme Na Waie, early this morning,&quot; Zamora Induta, a military spokesman, said to Agence France-Presse, insisting that &quot;this was not a coup d'etat.&quot;</t>
+		<h>Bernardo Vieira was the president of Guinea-Bissau.</h>
+	</pair>
+	<pair id="445" entailment="ENTAILMENT" task="IR">
+		<t>It has been nearly 27 years since Nicole, then a high school student from the Saarland in extreme western Germany, sang a heartfelt plea for world peace on the stage at the Eurovision Song Contest held in Harrogate, North Yorkshire in the United Kingdom. That simple message was wrapped with success; she became the first German in Contest history to take home the grand prize. The song was a brainchild of her former record producer, Ralph Siegel, and would be their greatest achievement in their nearly three-decade partnership.</t>
+		<h>Nicole won the Eurovision Song Contest.</h>
+	</pair>
+	<pair id="446" entailment="NONENTAILMENT" task="IR">
+		<t>Sierra was arrested on December 2 outside a local bar, and is being held without bond. Police claim that after they arrived, she first assaulted an officer then attempted to bribe him by offering to perform a sex act on him. Only two weeks earlier she had pleaded no contest to charges of battery and possessing cocaine. If she is convicted of all the new charges, she could be imprisoned for up to 11 years, which would mean she would have the baby whilst still in prison. Sierra earlier pled not guilty to all charges.</t>
+		<h>Jessica Sierra once reached the finals of &quot;American Idol&quot;.</h>
+	</pair>
+	<pair id="447" entailment="ENTAILMENT" task="IR">
+		<t>Last month, native bird trappers have snared and caught the Luzon Buttonquail (Turnix worcesteri or Worcester's buttonquail) in Dalton Pass, a cold and wind-swept bird passageway in the Caraballo Mountains, in Nueva Vizcaya, located between Cordillera Central and Sierra Madre mountain ranges, in Northern Luzon. The rare species, previously known to birders only through drawings based on dead museum specimens collected several decades ago, was identified in a documentary filmed in the Philippines called Bye-Bye Birdie.&quot;</t>
+		<h>Luzon Buttonquail is a rare species from the Philippines.</h>
+	</pair>
+	<pair id="448" entailment="NONENTAILMENT" task="IR">
+		<t>The BBC would like to apologise to both the Queen and Annie Leibovitz for any upset this may have caused.    - BBC statement The British Broadcasting Corporation (BBC) has apologised to Queen Elizabeth II and photographer, Annie Leibovitz, after a trailer for a documentary suggested she had walked out of a portrait sitting when the photographer asked her to remove her crown. The trailer shows a clip of the photographer telling the Queen, &quot;I think it will look better without the crown because the garter robe is so...&quot;</t>
+		<h>Queen Elizabeth II is the head of the Commonwealth.</h>
+	</pair>
+	<pair id="449" entailment="NONENTAILMENT" task="IR">
+		<t>After the SkyWest airliner touched down, the Airport Movement Area Safety System (AMASS) alerted and the air traffic controller transmitted &quot;Hold, Hold, Hold&quot; to the SkyWest flight crew in an attempt to stop the aircraft short of runway 1L. The SkyWest crew applied maximum braking that resulted in the airplane stopping in the middle of runway 1L. As this was occurring, the captain of Republic Airlines flight 4912 took control of the aircraft from the first officer, realized the aircraft was traveling too fast to stop, and initiated an immediate takeoff. According to the crew of SkyWest 5741, the Republic Airlines aircraft overflew theirs by 30 to 50 feet. The Federal Aviation Administration has categorized the incident as an operational error.</t>
+		<h>NTSB is responsible for investigating transportation accidents in the United States.</h>
+	</pair>
+	<pair id="450" entailment="NONENTAILMENT" task="IR">
+		<t>The European Organization for Nuclear Research (CERN) said on Monday that repairing the Large Hadron Collider (LHC) will cost up to €16.6 million or $21 million. The LHC, which is the world's largest and highest-energy particle accelerator, is located near the border of France and Switzerland and crosses the border four times. It has a diameter of 27 km (17 miles). It is designed to simulate the conditions shortly after the Big Bang, but it broke down on September 19 due to an electrical failure.</t>
+		<h>CERN head office is in Paris.</h>
+	</pair>
+</devset>

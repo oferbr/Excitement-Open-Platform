@@ -42,8 +42,8 @@ public class Ex4 {
     	
     	// As usual, read and run each of the code sections separately.   
     	
-        //ex4_1(); // scoring component example.  
-		//ex4_2(); // distance component example.
+        ex4_1(); // scoring component example.  
+		ex4_2(); // distance component example.
 
 	}
 	

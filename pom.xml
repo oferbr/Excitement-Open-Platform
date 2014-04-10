@@ -33,6 +33,7 @@
 		<module>distsim</module>
 		<module>globalgraphoptimizer</module>
 		<module>lexicalinferenceminer</module>
+		<module>tu2014</module>
 	</modules>
 	<dependencyManagement>
 		<dependencies>

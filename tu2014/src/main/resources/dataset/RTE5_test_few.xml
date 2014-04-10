@@ -1,0 +1,42 @@
+<testset>
+	<pair id="521" entailment="" task="IR">
+		<t>James Horwitz, Chairman of the UTA Department of Physics was contacted by the Dallas Mavericks owner Mark Cuban to study the new ball. Horwitz asked UTA physics professor Kaushik De to lead the project. De's team found that the new balls are tackier when dry, but become much more slippery than leather balls when they get damp. Traditional leather basketballs provide more grip when they are slightly wet.</t>
+		<h>Mark Cuban is a billionaire.</h>
+	</pair>
+	<pair id="522" entailment="" task="IR">
+		<t>Movie studio company, New Line Cinema has announced that movie director Peter Jackson will never be allowed to work on another New Line film. This announcement will also mean that Mr Jackson will not be allowed to film the prequel titled The Hobbit to The Lord of the Rings films he directed. The announcement was made mainly because New Zealander Mr Jackson and his partner, Fran Walsh, filed a law suit against New Line in 2005 as they believed New Line owed them much more money than they received for The Lord of the Rings trilogy as shown to them by a partial audit of The Fellowship of the Ring. Mr Jackson described it as "financial anomalies," which New Line refused to account for. "Fundamentally, our legal action is about holding New Line to its contractual obligations and promises." The film trilogies have so far managed to earn US$3 billion in ticket sales since 2001.</t>
+		<h>New Line wants to work with Peter Jackson.</h>
+	</pair>
+	<pair id="523" entailment="" task="IR">
+		<t>One of the most visible Satanic organizations-though one that was never a suspect or charged in any of the Satanic Panic cases-is the Church of Satan, founded by Anton LaVey. Members of the Church, such as Peter H. Gilmore, Peggy Nadramia, Boyd Rice, Adam Parfrey, Diabolos Rex, and musician King Diamond, were active in media appearances to refute allegations of criminal activity and the FBI would later issue an official report debunking the criminal conspiracy theories of this time.</t>
+		<h>Peter Gilmore is a member of a satanic organization.</h>
+	</pair>
+	<pair id="524" entailment="" task="IR">
+		<t>CNET editor, former Fresh Gear contributor, and Lab analyst James Kim has been missing since Saturday. Police have opened a missing person investigations and called on those, especially from the Oregon area, having any information on the whereabouts of the missing family to contact them. The information below is from the official investigation by the San Francisco Police Department (SFPD) - missing family members include: James, Kati, Penelope (age 4.5) and Sabine (6 months).</t>
+		<h>James Kim worked for CNET.</h>
+	</pair>
+	<pair id="525" entailment="" task="IR">
+		<t>John Yelenic was found dead in his home on April 13, 2006, one day before he was planning on signing his divorce papers. Prosecutors said Foley killed Yelenic after going to the dentist's house to confront him over the terms of the divorce. Prosecutors claim Foley slashed Yelenic several times with a knife and pushed his head through a small window, causing a further gash on his neck. Yelenic bled to death.</t>
+		<h>Yelenic molested his adopted son.</h>
+	</pair>
+	<pair id="526" entailment="" task="IR">
+		<t>Frank was a Jewish girl who was hiding from the German occupation of the Netherlands during World War II and often referred to the tree as being "comforting" as she looked out the hidden apartment skylight. Officials for the city of Amsterdam and the Anne Frank Museum state that the tree is infected with a fungus and poses a public health hazard as they argue that it was in imminent danger of falling over. It had been scheduled to be cut down on Tuesday, but was saved after an emergency court ruling.</t>
+		<h>America won World War II.</h>
+	</pair>
+	<pair id="527" entailment="" task="IR">
+		<t>At least 28 people drowned and were confirmed dead, 46 were rescued, while 34 others remain missing on Sunday, after an overcrowded passenger motorboat capsized off waters in Ballesteros, a town of 17,000 people, the Cagayan police reported. 'M/B Mae Jan', a wooden-hulled ferry, was carrying 102 passengers, after an eight-hour voyage from Calayan Island in the Luzon Strait for Appari when it capsized less than 300 meters (984 feet) from its destination, at 8:30 p.m. Its bamboo outrigger broke due to strong waves, as it reached the mouth of the Cagayan River ('Bannag' Rio Grande de Cagayan, 'Ilog ng Kagayan'), along Barangay Linao, about 50 meters from the shoreline of Pallog village.</t>
+		<h>More than 800 people died in a ferryboat accident in the Philippines.</h>
+	</pair>
+	<pair id="528" entailment="" task="IR">
+		<t>After the aeroplane pulled up abruptly, it then pitched down at an angle of 31 degrees, rolling left and right, partially upside-down. This sort of stall is known as an aggravated stall, and it can be very difficult to return the aeroplane to normal flight from one. In this case, the pilot had less than two thousand feet to do so before the aircraft crashed into the ground. The pilot's training has now been put into question, and it was discovered that the captain, Marvin Renslow, aged 47, had logged only 110 hours in this particular aircraft, though he had thousands of hours in similar aircraft. Experts say his experience should have adequately prepared him.</t>
+		<h>A daily commuter flight crashed in Buffalo.</h>
+	</pair>
+	<pair id="529" entailment="" task="IR">
+		<t>The movie is offered under a Creative Commons Attribution-Noncommercial-ShareAlike 2.5 license; this allows people to use, edit, or share the movie in any way (except commercially) as long as they credit the creators. All of the raw unedited footage, including audio files, is offered under a Creative Commons Attribution 2.5 license; as long as the creators are credited, users can do whatever they want with the files privately or commercially.</t>
+		<h>"Boy Who Never Slept" is the title of an open source movie.</h>
+	</pair>
+	<pair id="530" entailment="" task="IR">
+		<t>The first major hurdle is Turkish recognition of Cyprus. EU leaders, including European Commission President José Manuel Barroso, have made recognising the island member-state a key pre-requisite for talks, however, Turkish Prime Minister Recep Tayyip Erdogan has previously said that he would not bow to demands to recognise the nation citing this as one of four &quot;red lines&quot; he will not cross. Erdogan has said that recognition is entirely dempendent upon the Greek-Cypriots accepting a United Nations peace plan to re-unify the island, which previously they rejected.</t>
+		<h>During the EU summit, there will be talks with Turkey.</h>
+	</pair>
+</testset>

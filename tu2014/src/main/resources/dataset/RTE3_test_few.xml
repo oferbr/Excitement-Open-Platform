@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entailment-corpus>
+	<pair id="251" entailment="NONENTAILMENT" task="IR" length="short" >
+		<t>The World Trade Organization is in many ways similar to the splitting of the atom. Both have great potential for productivity and destruction.</t>
+		<h>World Trade Organization mediates trade disputes.</h>
+	</pair>
+	<pair id="252" entailment="ENTAILMENT" task="IR" length="long" >
+		<t>After 1992, the "Clean Hands" investigation of political corruption brought about the most serious political crisis in the history of the Italian Republic, quickly extending to the uppermost levels of the political and economic system. In a matter of months, the magistracy uncovered a scene of corruption and political illegality without precedent in the history of the western democracies, involving the entire political class of the country and broad sectors of its business community.</t>
+		<h>High-level political corruption is present in Italy.</h>
+	</pair>
+	<pair id="253" entailment="NONENTAILMENT" task="IR" length="short" >
+		<t>In Italy's weak party system, the political influence of powerful individual legislators trumped the political imperatives of the ruling parties.</t>
+		<h>High-level political corruption is present in Italy.</h>
+	</pair>
+	<pair id="254" entailment="NONENTAILMENT" task="IR" length="long" >
+		<t>This course is designed to give the student a fundamental training in logic so that he can equip himself with the basic knowledge of logic, and accustom himself to logical thinking. This course includes: the uses of language, deduction and induction.</t>
+		<h>Deduction and induction are used to teach English.</h>
+	</pair>
+	<pair id="255" entailment="ENTAILMENT" task="IR" length="short" >
+		<t>Many of the Vikings who travelled to Scotland, and other parts of Europe were traders or peaceful settlers looking for land to farm.</t>
+		<h>Vikings landed in Scotland.</h>
+	</pair>
+	<pair id="256" entailment="ENTAILMENT" task="IR" length="short" >
+		<t>Evidence suggests that the Vikings invaded certain areas of Scotland, including the Outer Hebrides, Shetland, and some of Caithness and Sutherland, and settled there.</t>
+		<h>Vikings landed in Scotland.</h>
+	</pair>
+	<pair id="257" entailment="NONENTAILMENT" task="IR" length="short" >
+		<t>Just to keep their big bodies warm, they have to eat up to one tenth of their body weight every day.</t>
+		<h>Information about what manatees eat is available.</h>
+	</pair>
+	<pair id="258" entailment="ENTAILMENT" task="IR" length="short" >
+		<t>Manatees are vegetarians. They eat sea grass and other vegetation such as algae that they find in the shallow waters that they live in.</t>
+		<h>Information about what manatees eat is available.</h>
+	</pair>
+	<pair id="259" entailment="ENTAILMENT" task="IR" length="long" >
+		<t>They consume huge quantities of food each day-a large adult can eat several hundred pounds of vegetation daily-mostly from shallow waters and near shore. Manatees also occasionally eat fish and snails, which are an important source of calcium, phosphorus, and protein.</t>
+		<h>Information about what manatees eat is available.</h>
+	</pair>
+	<pair id="260" entailment="NONENTAILMENT" task="IR" length="short" >
+		<t>Hubble celebrates 15th anniversary with spectacular new images.</t>
+		<h>Hubble Telescope celebrates its anniversary.</h>
+	</pair>
+</entailment-corpus>
