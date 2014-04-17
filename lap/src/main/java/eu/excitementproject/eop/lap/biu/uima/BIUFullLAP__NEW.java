@@ -2,7 +2,6 @@ package eu.excitementproject.eop.lap.biu.uima;
 
 import static org.uimafit.factory.AnalysisEngineFactory.createPrimitiveDescription;
 
-import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.uima.analysis_engine.AnalysisEngineDescription;

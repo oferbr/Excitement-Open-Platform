@@ -64,7 +64,7 @@ public class Ex1a
         
     	// TIE (MaxEntClassificationEDA): a simple configuration with no knowledge resource. 
     	// extracts features from lemma, tokens and parse tree and use them as features. 
-    	File configFile = new File("src/main/resources/MaxEntClassificationEDA_Base+TP_EN.xml");        
+    	File configFile = new File("src/main/resources/config/MaxEntClassificationEDA_Base+WN_ExistingModel.xml");        
     	CommonConfig config = new ImplCommonConfig(configFile);
     	EDABasic<ClassificationTEDecision> eda = new MaxEntClassificationEDA(); 
     	eda.initialize(config); 

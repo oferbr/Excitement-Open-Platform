@@ -37,7 +37,7 @@ public class Ex1b {
     	// init logs
     	BasicConfigurator.resetConfiguration();
     	BasicConfigurator.configure();
-    	Logger.getRootLogger().setLevel(Level.WARN);  
+    	Logger.getRootLogger().setLevel(Level.WARN);
 
 		// Each and every LAP in EXCITEMENT Open Platform (EOP) 
 		// implements the interface LAPAccess.
@@ -47,7 +47,11 @@ public class Ex1b {
 				"src/main/resources/model/ner-eng-ie.crf-3-all2008-distsim.ser.gz",
 				"localhost",
 				8080);
-		
+
+		// Prepare output folder for XMIs
+		File outDir = new File("target/xmi");
+		outDir.mkdirs();
+
 		annotateSingleText(lap);
 		
 		annotateTHPair(lap);
@@ -140,7 +144,7 @@ public class Ex1b {
 		
 		// Example use of UimaUtils.dumpXmi
 		// Our JCas will be dumped to an XMI file
-		UimaUtils.dumpXmi(new File("src/main/resources/xmi/EX1_THPair.xmi"), jcas);
+		UimaUtils.dumpXmi(new File("target/xmi/EX1b_THPair.xmi"), jcas);
 
 	}
 	
@@ -149,7 +153,8 @@ public class Ex1b {
 		System.out.printf("\n==========\nannotateFullDataset\n==========\n\n");
 
 		File dataset = new File("src/main/resources/dataset/RTE3_dev_few.xml"); 
-		File outputDir = new File("src/main/resources/xmi/RTE3_dev"); 
+		File outputDir = new File("target/xmi/RTE3_dev"); 
+		outputDir.mkdir();
 		
 		// Process all the pairs in the dataset, and dump them all to XMI files
 		lap.processRawInputFormat(dataset, outputDir);
@@ -162,14 +167,14 @@ public class Ex1b {
 				JCas textView = jcas.getView(LAP_ImplBase.TEXTVIEW);
 				System.out.printf("\n%s:\n", xmiFile.getName());
 				for (Sentence sentence : JCasUtil.select(textView, Sentence.class)) {
-					System.out.printf("   Sentence in range [%d:%d]:\n", sentence.getBegin(), sentence.getEnd());
+					System.out.printf("   Sentence[%d:%d]: %s\n", sentence.getBegin(), sentence.getEnd(), sentence.getCoveredText());
 					
 					// NOTE that Dependency annotations are not covered by any of the two dependent tokens
 					// (the Governor and the Dependent). Their span is always the full sentence itself.
 					// So we can visually imagine that they are "floating" above the sentence.
 					for (Dependency dependency : JCasUtil.selectCovered(Dependency.class, sentence)) {
 						Token gov = dependency.getGovernor();
-						Token dep = dependency.getGovernor();
+						Token dep = dependency.getDependent();
 						System.out.printf("      %s[%s/%s] --(%s)--> %s[%s/%s]\n",
 								gov.getCoveredText(), gov.getLemma().getValue(), gov.getPos().getPosValue(),
 								dependency.getDependencyType(),

@@ -16,12 +16,24 @@ import org.uimafit.util.JCasUtil;
 import de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token;
 import eu.excitementproject.tu2014.uima.StopWord;
 
+/**
+ * This annotator scans all tokens, and marks it as a StopWord, if it appears in the resource file.
+ * Additionally, each stop word is classified on the POS level:
+ * <ul>
+ * <li>Some stop words are "content words", with POSes like Noun and Verb.
+ * <li>Some stop words are "function words", with POSes like Preposition and Conjunction.
+ * <li>All stop words with the remaining POSes are classified as "Unknown".
+ * 
+ * @author Ofer Bronstein
+ * @since April 2014
+ */
 public class StopWordsAE extends JCasAnnotator_ImplBase {
 
 	@SuppressWarnings("unchecked")
 	@Override
 	public void initialize(UimaContext aContext) throws ResourceInitializationException {
 		try {
+			// Load resource
 			stopWords = FileUtils.readLines(new File(STOP_WORDS_LIST_FILE));
 		}
 		catch (IOException e) {
@@ -49,9 +61,7 @@ public class StopWordsAE extends JCasAnnotator_ImplBase {
 				}
 			}
 		}
-
 	}
-
 	
 	private List<String> stopWords;
 	
