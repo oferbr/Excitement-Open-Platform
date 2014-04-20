@@ -2,15 +2,14 @@ package eu.excitementproject.tu2014.lap;
 
 import static org.uimafit.factory.AnalysisEngineFactory.createPrimitiveDescription;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.apache.uima.analysis_engine.AnalysisEngineDescription;
 import org.apache.uima.resource.ResourceInitializationException;
 
+import eu.excitementproject.eop.common.configuration.CommonConfig;
+import eu.excitementproject.eop.common.configuration.NameValueTable;
+import eu.excitementproject.eop.common.exception.ConfigurationException;
 import eu.excitementproject.eop.lap.LAPAccess;
 import eu.excitementproject.eop.lap.LAPException;
-import eu.excitementproject.eop.lap.biu.uima.BIUFullLAP;
 import eu.excitementproject.eop.lap.biu.uima.ae.ner.StanfordNamedEntityRecognizerAE;
 import eu.excitementproject.eop.lap.biu.uima.ae.postagger.MaxentPosTaggerAE;
 import eu.excitementproject.eop.lap.biu.uima.ae.sentencesplitter.LingPipeSentenceSplitterAE;
@@ -19,62 +18,56 @@ import eu.excitementproject.eop.lap.implbase.LAP_ImplBaseAE;
 
 /**
  * BIU's basic LAP (Linguistic Analysis Pipeline).
- * Similar to {@link BIUFullLAP}, but without parser. 
+ * Similar to {@link eu.excitementproject.eop.lap.biu.uima.BIUFullLAP}, but without parser. 
+ * 
  * @author Ofer Bronstein
- * @since May 2013
+ * @since April 2014
  */
 public class BIUBasicLAP extends LAP_ImplBaseAE implements LAPAccess {
 
 	public BIUBasicLAP(String taggerModelFile, String nerModelFile) throws LAPException {
-		super(buildDescriptorArgs(/*lemmatizerModelFile, */taggerModelFile, nerModelFile));
-		
-		languageIdentifier = "EN"; // set languageIdentifer 
-	}
-	
-	private static String name(Class<?> cls, String paramName) {
-		return cls.getName() + "." + paramName;
-	}
-	
-	private static Map<String,String> buildDescriptorArgs(String taggerModelFile, String nerModelFile) {
-		HashMap<String,String> args = new HashMap<String,String>();
-		
-		args.put(ARGNAME_MAXENT_TAGGER_MODEL_FILE, taggerModelFile);
-		args.put(ARGNAME_STANFORD_NER_MODEL_FILE, nerModelFile);
-		
-		return args;
-	}
-	
-	@Override
-	public AnalysisEngineDescription[] listAEDescriptors(Map<String,String> args) throws LAPException {
 		try 
 		{
-			// Build analysis engine descriptions
+			// Step a) Build analysis engine descriptions
 			AnalysisEngineDescription splitter =   createPrimitiveDescription(LingPipeSentenceSplitterAE.class);
 			AnalysisEngineDescription tokenizer =  createPrimitiveDescription(MaxentTokenizerAE.class);
-			AnalysisEngineDescription lemmatizer = createPrimitiveDescription(GateLemmatizerAE.class);
 			AnalysisEngineDescription tagger =     createPrimitiveDescription(MaxentPosTaggerAE.class,
-					MaxentPosTaggerAE.PARAM_MODEL_FILE , args.get(ARGNAME_MAXENT_TAGGER_MODEL_FILE));
+														MaxentPosTaggerAE.PARAM_MODEL_FILE , taggerModelFile);
 			AnalysisEngineDescription ner =        createPrimitiveDescription(StanfordNamedEntityRecognizerAE.class,
-					StanfordNamedEntityRecognizerAE.PARAM_MODEL_FILE , args.get(ARGNAME_STANFORD_NER_MODEL_FILE));
+														StanfordNamedEntityRecognizerAE.PARAM_MODEL_FILE , nerModelFile);
 
-			
 			AnalysisEngineDescription[] descs = new AnalysisEngineDescription[] {
 					splitter,
 					tokenizer,
-					lemmatizer,
 					tagger,
 					ner,
 			};
-			return descs;
+
+			// Step b) call initializeViews() 
+			// initialize view with EOP default views. 
+			initializeViews(descs); 
+			
+			// Step c) set lang ID 
+			languageIdentifier = "EN";		
 		}
 		catch (ResourceInitializationException e)
 		{
-			throw new LAPException("Unable to create AE descriptions", e); 
+			throw new LAPException(e); 
 		}
 	}
-
 	
-	private static final String ARGNAME_MAXENT_TAGGER_MODEL_FILE = name(MaxentPosTaggerAE.class, MaxentPosTaggerAE.PARAM_MODEL_FILE);
-	private static final String ARGNAME_STANFORD_NER_MODEL_FILE = name(StanfordNamedEntityRecognizerAE.class, StanfordNamedEntityRecognizerAE.PARAM_MODEL_FILE);
+	public BIUBasicLAP(NameValueTable section) throws LAPException, ConfigurationException {
+		this(
+			section.getFile(DEFAULT_TAGGER_MODEL_FILE_PARAM).getAbsolutePath(),
+			section.getFile(DEFAULT_NER_MODEL_FILE_PARAM).getAbsolutePath()
+			);
+	}
 
+	public BIUBasicLAP(CommonConfig config) throws LAPException, ConfigurationException {
+		this(config.getSection(DEFAULT_SECTION_NAME));
+	}
+	
+	private static final String DEFAULT_SECTION_NAME = "rte_pairs_preprocess";
+	private static final String DEFAULT_TAGGER_MODEL_FILE_PARAM = "easyfirst_stanford_pos_tagger";
+	private static final String DEFAULT_NER_MODEL_FILE_PARAM = "stanford_ner_classifier_path";
 }

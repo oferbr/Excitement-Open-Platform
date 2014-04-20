@@ -17,7 +17,7 @@ import eu.excitementproject.eop.common.utilities.configuration.ImplCommonConfig;
 import eu.excitementproject.eop.core.ClassificationTEDecision;
 import eu.excitementproject.eop.core.MaxEntClassificationEDA;
 import eu.excitementproject.eop.lap.LAPAccess;
-import eu.excitementproject.eop.lap.biu.uima.BiuAndOpenNlpLAP;
+import eu.excitementproject.eop.lap.biu.uima.BIUAndOpenNlpLAP;
 
 /**
  * A simple, minimal code that runs one LAP & EDA to check all environment is Okay. 
@@ -51,7 +51,7 @@ public class Ex1a
         System.out.println( "Running LAP for the T-H pair." );
 
     	// make a new BIUFullLAP based LAP 
-    	LAPAccess lap = new BiuAndOpenNlpLAP(
+    	LAPAccess lap = new BIUAndOpenNlpLAP(
 				"src/main/resources/model/ner-eng-ie.crf-3-all2008-distsim.ser.gz",
 				"localhost",
 				8080);
