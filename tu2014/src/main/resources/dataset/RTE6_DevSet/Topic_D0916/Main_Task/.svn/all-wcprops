@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/NLP-lab/!svn/ver/5418/trunk/common/data/Datasets/RTE/RTE6/RTE6_Main_Novelty_DEV_SET/RTE6_DEVSET/Topic_D0916/Main_Task
+END
+D0916_clusterB.xml
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/NLP-lab/!svn/ver/5418/trunk/common/data/Datasets/RTE/RTE6/RTE6_Main_Novelty_DEV_SET/RTE6_DEVSET/Topic_D0916/Main_Task/D0916_clusterB.xml
+END
+Main_evaluation_pairs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/NLP-lab/!svn/ver/5418/trunk/common/data/Datasets/RTE/RTE6/RTE6_Main_Novelty_DEV_SET/RTE6_DEVSET/Topic_D0916/Main_Task/Main_evaluation_pairs.xml
+END
+Main_hypotheses.xml
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/NLP-lab/!svn/ver/5418/trunk/common/data/Datasets/RTE/RTE6/RTE6_Main_Novelty_DEV_SET/RTE6_DEVSET/Topic_D0916/Main_Task/Main_hypotheses.xml
+END
